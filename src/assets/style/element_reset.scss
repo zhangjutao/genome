@@ -1,0 +1,184 @@
+ //覆盖一些element-ui样式
+
+ .el-breadcrumb__inner, .el-breadcrumb__inner a{
+    font-weight: 400!important;
+  }
+  
+   .el-upload {
+     input[type="file"] {
+       display: none !important;
+     }
+   }
+  
+   .el-upload__input {
+     display: none;
+   }
+  
+   .cell {
+     .el-tag {
+       margin-right: 0px;
+     }
+   }
+  
+   .small-padding {
+     .cell {
+       padding-left: 5px;
+       padding-right: 5px;
+     }
+   }
+  
+   .fixed-width{
+    .el-button--mini{
+      padding: 7px 10px;
+      width: 60px;
+    }
+   }
+  
+   .status-col {
+     .cell {
+       padding: 0 10px;
+       text-align: center;
+       .el-tag {
+         margin-right: 0px;
+       }
+     }
+   }
+  
+   //暂时性解决dialog 问题 https://github.com/ElemeFE/element/issues/2461
+   .el-dialog {
+     transform: none;
+     left: 0;
+     position: relative;
+     margin: 0 auto;
+   }
+  
+   //文章页textarea修改样式
+   .article-textarea {
+     textarea {
+       padding-right: 40px;
+       resize: none;
+       border: none;
+       border-radius: 0px;
+       border-bottom: 1px solid #bfcbd9;
+     }
+   }
+  
+   //element ui upload
+   .upload-container {
+     .el-upload {
+       width: 100%;
+       .el-upload-dragger {
+         width: 100%;
+         height: 200px;
+       }
+     }
+   }
+  
+  //dropdown
+   .el-dropdown-menu{
+    a{
+      display: block
+    }
+  }
+// .el-select,.el-button,.el-radio{
+//     width: 100%;
+// }
+.el-message-box__btns .el-button{
+  width: auto;
+}
+.el-tooltip__popper.is-light{
+  border: 1px solid #ccc!important;
+}
+.el-tooltip__popper.is-light[x-placement^="top"] .popper__arrow {
+  border-top-color: #ccc!important;
+}
+// .el-input__inner ,.el-select-dropdown__item span,.el-select-dropdown__item{
+//   font-size: 13px!important;
+//   padding-right: 0px!important;
+//   padding-left: 10px!important;
+// }
+.el-button--medium {
+  padding: 10px 10px;
+}
+.el-message-box{
+  width: 300px!important;
+}
+.el-dialog__headerbtn{
+  top:10px!important;
+}
+.el-dialog__headerbtn .el-dialog__close{
+  color: #fff!important;
+}
+.el-dialog__header{
+  padding: 0 !important;;
+  cursor: move;
+  height: 40px;
+  line-height: 40px;
+  background-color:#386cca;
+  text-align: center;
+  .el-dialog__title{
+    color: #fff;
+    font-family: "MicrosoftYaHei";
+    font-size: 16px;
+  }
+}
+.header{
+  .el-menu--horizontal{
+    top:10px;
+    background-color: #fff!important;
+    border-width: 0px!important;
+  }
+  .el-menu--horizontal > .el-menu-item.is-active{
+    border-width: 0px!important;
+    color: #409EFF!important;
+  }
+  .el-menu--horizontal > .el-menu-item,.el-menu--horizontal > .el-submenu .el-submenu__title{
+    border-width: 0px!important;
+  }
+  .el-menu--horizontal > .el-submenu.is-active .el-submenu__title{
+    border-width: 0px!important;
+    color: #409EFF!important;
+
+  }
+  .el-menu--horizontal > .el-submenu .el-submenu__title:hover{
+    background-color: #fff!important;
+  }
+  .el-menu--horizontal > .el-menu-item:not(.is-disabled):hover, .el-menu--horizontal > .el-menu-item:not(.is-disabled):focus,.el-menu--horizontal > .el-submenu .el-submenu__title:hover{
+    background-color: #fff!important;
+    color: #409EFF!important;
+  }
+  .el-menu--horizontal .el-menu .el-menu-item, .el-menu--horizontal .el-menu .el-submenu__title{
+    color: #409EFF!important;
+  }
+}
+// .el-menu--horizontal .el-menu .el-menu-item.is-active a, .el-menu--horizontal .el-menu .el-submenu__title.is-active a{
+//   color: #409EFF!important;
+// }
+
+// .el-menu--horizontal .el-menu .el-menu-item:not(.is-disabled):hover, .el-menu--horizontal .el-menu .el-submenu__title{
+//   color: #409EFF!important;
+// }
+.el-dialog__body{
+  height: 500px;
+  overflow-y: auto;
+}
+.el-menu--horizontal {
+  .el-menu--popup{
+    min-width: 100px!important;
+  }
+  a{
+    color: #525966;
+  }
+  a:hover{
+    color: #409EFF!important;
+  }
+  .router-link-exact-active{
+    color: #409EFF!important;
+  }
+}
+.el-menu--horizontal.el-menu > .el-menu-item a{
+  color: #525966;
+}
+.el-menu--horizontal.el-menu > .el-submenu .el-submenu__title{
+  color: #525966;
+}
